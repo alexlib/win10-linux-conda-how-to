@@ -1,9 +1,9 @@
 # win10-linux-conda-how-to
-A tutorial on how to set up a Linux environment on a computer running Windows 10. Followed by how to install and use (bio)conda.
+A tutorial on how to set up a Linux environment on a computer running Windows 10. Followed by how to install and use PyPTV (OpenPTV).
 
-[I started this tutorial on a Twitter thread](https://twitter.com/CurtisKapsak/status/974737312155422721) but after a suggestion, decided to create a repository to document everything. This way people can comment, suggest changes, make recommendations, etc. to improve the tutorial!
+[@CurtisKapsak started this tutorial on a Twitter thread](https://twitter.com/CurtisKapsak/status/974737312155422721) but after a suggestion, decided to create a repository to document everything. This way people can comment, suggest changes, make recommendations, etc. to improve the tutorial!
 
-I've created this tutorial to help out anyone interested in doing bioinformatics analyses but they:
+@CurtisKapsak has created this tutorial to help out anyone interested in doing bioinformatics analyses but they:
   * Do not have a Mac or a computer running Linux (running natively)
   * Do not have access to a high performance computing cluster/server/whatever you want to call it
   * Hate VirtualBox or other similar virtual computing applications (robs your computer's resources!)
@@ -19,17 +19,12 @@ I've created this tutorial to help out anyone interested in doing bioinformatics
    5. [Use conda to install any of the 3000+ bioinformatics tools available in the Bioconda repository](#step-5-use-conda-to-install-any-of-the-3000-bioinformatics-tools-available-in-the-bioconda-repository)
 
  
-#### Why should I use (bio)conda? 
-Check out the pre-print on bioconda here:
-[Bioconda: A sustainable and comprehensive software distribution for the life sciences | bioRxiv](https://www.biorxiv.org/content/early/2017/10/27/207092)
+#### Why should I use PyPTV and OpenPTV to study complex 3D Lagrangian flow cases?
+Check out the website http://www.openptv.net
 
+  * supportive community
   * reproducability
   * ease of software installation
-
-I use it mainly because it is a solution for the mess that is installing dependencies (dependency = software needed to run other software) for bioinformatics software. This program will save you a big headache when trying to run your favorite software - quality control tools, genome assemblers, data visualization, basecallers, etc. There are lots of software out there and each will require installing a specific combination of required dependencies. Bioconda will take that headache away by essentially building a pseudo-environment for you to work in, as if every dependency were already installed (and installed correctly!!). 
-
-Need to change from Python v.2.7 to 3.6? No problem. No need to un-install the old version of python that you installed previously, you can install the newer version right on top, and remove it (and revert to the old version) simply with one command when you're ready to. The other beautiful thing is that Bioconda works on most, if not all operating systems.
- 
   
 ### PC Requirements
   * x64 based processor, AKA 64-bit processor (check by going to **Settings** -> **System** -> **About** -> **Device Specifications** -> **System type**)
@@ -44,13 +39,12 @@ Need to change from Python v.2.7 to 3.6? No problem. No need to un-install the o
   * [Microsoft's documentation on the Windows 10 Linux subsystem](https://docs.microsoft.com/en-us/windows/wsl/about)
   * [FAQ's about the Windows 10 Linux subsystem](https://docs.microsoft.com/en-us/windows/wsl/faq)
   * [What's the difference between conda, anaconda, and miniconda?](https://bioconda.github.io/faqs.html#conda-anaconda-minconda)
-  * [Bioconda: A sustainable and comprehensive software distribution for the life sciences | bioRxiv](https://www.biorxiv.org/content/early/2017/10/27/207092)
-  * [Using Bioconda -- Bioconda documentation](https://bioconda.github.io/)
+  * http://www.openptv.net
+  * http://github.com/alexlib/pyptv
+  * http://openptv-python.readthedocs.io
   * [Managing conda environments](https://conda.io/docs/user-guide/tasks/manage-environments.html)
   * [WARNING from Microsoft: Do not change Linux files using Windows apps and tools](https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/)
   
-
- 
  
 ## Step 1. Install Linux Subsystem on your computer running Windows 10
 The first step is to install the Linux Subsystem into your Windows 10 OS. I've copied and modified the bulk of these instructions (and a few images) from Microsoft's documentation found here: https://docs.microsoft.com/en-us/windows/wsl/install-win10 . Thanks to the folks at Microsoft for putting together this documentation and making it publicly available on github!
