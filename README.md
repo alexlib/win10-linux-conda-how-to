@@ -15,8 +15,8 @@ A tutorial on how to set up a Linux environment on a computer running Windows 10
    1. [Install Linux Subsystem on your computer running Windows 10](#step-1-install-linux-subsystem-on-your-computer-running-windows-10)
    2. [Install your Linux Distribution of Choice](#step-2-install-your-linux-distribution-of-choice)
    3. [Install conda into your new Linux environment using Miniconda](#step-3-install-conda-into-your-new-linux-environment-using-miniconda)
-   4. [Set up Bioconda channels in conda](#step-4-set-up-bioconda-channels-in-conda)
-   5. [Use conda to install any of the 3000+ bioinformatics tools available in the Bioconda repository](#step-5-use-conda-to-install-any-of-the-3000-bioinformatics-tools-available-in-the-bioconda-repository)
+   4. [Set up pyptv conda environment](#step-4-set-up-pyptv-environment-in-conda)
+   5. [Install liboptv, Cython bindings and PyPTV](#step-5-install-liboptv-cython-pyptv)
 
  
 #### Why should I use PyPTV and OpenPTV to study complex 3D Lagrangian flow cases?
@@ -148,7 +148,7 @@ conda config --add channels conda-forge
 ```
 You should see a warning message after running the first command, but that is OK, simply proceed with the three commands. You will not see any message or output after entering the third command. That is OK, it just means that there is no output to the terminal.
 
-## Step 5. Use conda to install any of the 3000+ bioinformatics tools available in the Bioconda repository
+## Step 5. Install `liboptv`, Cython bindings 
 Some examples of tools available on Bioconda's Repository. Just try searching for you favorite tools here: https://bioconda.github.io/recipes.html:
   * fastqc - A quality control tool for high throughput sequence data
   * SPAdes - An assembly toolkit containing various assembly pipelines
